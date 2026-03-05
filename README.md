@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Movie Insight Builder
 
-## Getting Started
+A modern, production-ready web application built with Next.js (App Router), TypeScript, and TailwindCSS. It takes an IMDb ID, fetches movie details via OMDb API, simulates audience reviews, and provides an AI-generated sentiment summary.
 
-First, run the development server:
+## Tech Stack
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **External API**: OMDb API
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Key Features
+- **Movie Data**: Implemented via OMDb API.
+- **AI Sentiment Analysis**: Keyword-based sentiment logic engine that analyzes mock reviews.
+- **Modern UI**: Dark theme, glassmorphism, Framer Motion animations.
+- **Production-Ready**: TypeScript, Tailwind, Error boundaries, Skeletons included.
+- **Responsive**: Fully optimized for mobile, tablet, and desktop viewports.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation Steps
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository and navigate into the project directory:
+   ```bash
+   git clone <your-repo-link>
+   cd ai-movie-insight-builder
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install the necessary dependencies:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Create a `.env.local` file in the root of the project to set up the API key:
+   ```env
+   NEXT_PUBLIC_OMDB_API_KEY=your_omdb_api_key_here
+   ```
+   *(You can get a free key from [http://www.omdbapi.com/apikey.aspx](http://www.omdbapi.com/apikey.aspx))*
 
-To learn more about Next.js, take a look at the following resources:
+4. Start the local development server:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment Instructions
 
-## Deploy on Vercel
+This project is optimized for deployment on Vercel.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Push to GitHub**: Initialize a Git repository and push your project to GitHub.
+2. **Connect to Vercel**: Import the GitHub repository in your Vercel Dashboard.
+3. **Environment Variables**: Add your `NEXT_PUBLIC_OMDB_API_KEY` in the Vercel deployment settings.
+4. **Deploy**: Click Deploy. Vercel will automatically build and publish your application.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Usage
+Enter an IMDb ID (e.g., `tt0133093` for The Matrix, `tt0068646` for The Godfather) to see the movie poster, details, generated reviews, and AI-driven sentiment analysis.
