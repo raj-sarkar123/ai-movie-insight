@@ -21,7 +21,7 @@ A modern, production-ready web application built with Next.js (App Router), Type
 
 1. Clone the repository and navigate into the project directory:
    ```bash
-   git clone <your-repo-link>
+   git clone https://github.com/raj-sarkar123/ai-movie-insight
    cd ai-movie-insight-builder
    ```
 
